@@ -55,3 +55,8 @@ Our filtered JSON looks like this:
 }
 
 Each menu_item is assigned a unique id number through the POS system when it is created.  If the item is set to be tracked by 86 count then we see the property of 86count.  I would like to somehow tie the item_id from POSLavu with the item_id on the menuboard.
+
+
+**  Basically thinking something similiar to this:
+
+If track_86_count=86_count and inv_count=0 then do something.
