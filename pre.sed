@@ -1,0 +1,30 @@
+# Remove unwanted/unused fields from our xml before converting to csv.  Once converted to csv, we will run the post.sed script to further
+# sanitize our data.
+/options/d
+/image/d
+/null/d
+/description/d
+/price_tier_profile_id/d
+/last_modified/d
+/forced_modifier_group_id/d
+/active/d
+/hidden_value/d
+/show_in_app/d
+/allow_deposit/d
+/modifier/d
+/quick_item/d
+/print/d
+/menu_id/d
+/ltg_display/d
+/open_item/d
+/category_id/d
+/tax_inclusion/d
+/taxrate/d
+/misc_content/d
+/ingredients/d
+/UPC/d
+/super_group/d
+/happyhour/d
+/tax_profile/d
+/chain_reporting/d
+/discount/d
