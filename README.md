@@ -60,3 +60,5 @@ Each menu_item is assigned a unique id number through the POS system when it is 
 **  Basically thinking something similiar to this:
 
 If track_86_count=86_count and inv_count=0 then do something.
+
+06/07/16 - I have made progress on getting the data formatted into a more usable form.  I have edited the php script so that it now pulls down the XML from the API, strips out all unused rows, then converts everything to a csv file that we can then compare with our mysql database.  
