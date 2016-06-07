@@ -6,6 +6,7 @@
 
 <?php
         $file = "results.xml";
+        $filtered = "filtered.xml"
 	$header = "<?xml version='1.0' encoding='UTF-8'?>";
         $api_url = "https://api.poslavu.com/cp/reqserv/";
         $api_dataname = [api_dataname];
