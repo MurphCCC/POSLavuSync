@@ -34,4 +34,20 @@
 
 	echo display_api_response($response);
 	file_put_contents($file, $response);
+	
+	shell_exec('cat results.xml | sed -f pre.sed > filtered.xml');
+?>
+
+<?php
+if (file_exists($filtered)) {
+    $xml = simplexml_load_file($filtered);
+$f = fopen('results.csv', 'w');
+foreach ($xml->row as $row) {
+    fputcsv($f, get_object_vars($row),',','"');
+}
+fclose($f);
+}
+
+        shell_exec('cat results.csv | sed -f post.sed > final.csv');
+        shell_exec('rm results.* filtered.xml');
 ?>
